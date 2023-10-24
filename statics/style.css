@@ -1,0 +1,93 @@
+*{
+    margin:0;
+}
+
+body{
+    background-color: aqua;
+    background-repeat: no-repeat;
+    background-image: url("todo_image.png");
+    background-position: center;
+  
+    background-size: cover;
+    
+} 
+
+
+
+
+.heading{
+    color: red;
+    font-size: xx-large;
+    
+}
+
+
+.box_heading{
+    color: rgb(4, 0, 255);
+    /* text-shadow: 4px 4px rgba(51, 46, 46, 0.558); */
+    text-align: center;
+    display: block;
+    width: 30vw;
+    /* background-color: pink; */
+    padding: 50px;
+    margin-left: 30vw;
+    margin-top: 15vw;
+    padding-bottom: 500px;
+    font-size:xx-large;
+    
+}
+
+.heading_2{
+
+    text-shadow: 4px 4px rgba(51, 46, 46, 0.558);
+    text-align: center;
+
+}
+
+.name{
+    margin-top: 5vw;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 10px;
+    width: 25vw;
+    font-size: large;
+    color: rgb(174, 0, 255);
+    font-weight: bolder;
+    background-color: aquamarine;
+}
+
+.todo{
+    margin-top: 3vw;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 10px;
+    width: 25vw;
+    font-size: large;
+    color: rgb(174, 0, 255);
+    font-weight: bolder;
+    background-color: aquamarine;
+}
+
+.add{
+    padding: 1vw;
+    margin-top: 5vw;
+    background-color: bisque;
+}
+
+.add:hover{
+    background-color: rgb(246, 188, 0);
+    box-shadow: 2px 2px rgb(95, 93, 85);
+    color: white;
+}
+
+.hypertext{
+    color: rgb(255, 0, 0);
+    margin-left: 30px;
+
+}
+
+.hypertext:hover{
+
+    color: rgb(5, 178, 246);
+}
+

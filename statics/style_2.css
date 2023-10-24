@@ -1,0 +1,67 @@
+*{
+    margin:0;
+}
+
+body{
+    background-color: aqua;
+} 
+
+
+
+
+.heading{
+    color: rgb(255, 166, 0);
+    font-size: xx-large;
+    
+}
+
+
+.box_heading{
+    color: rgb(54, 61, 255);
+    text-shadow: 4px 4px rgba(51, 46, 46, 0.558);
+    text-align: center;
+    display: block;
+    width: 80vw;
+    /* background-color: pink; */
+    padding: 50px;
+    margin-left: 9vw;
+    margin-top: 2vw;
+    padding-bottom: 500px;
+    font-size:xx-large;
+    
+}
+
+.name{
+    margin-top: 2vw;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 10px;
+    width: 25vw;
+    font-size: large;
+    color: rgb(174, 0, 255);
+    font-weight: bolder;
+    background-color: aquamarine;
+}
+
+.submit{
+    padding: 1vw;
+    margin-top: 2vw;
+    background-color: bisque;
+}
+
+.submit:hover{
+    background-color: rgb(246, 188, 0);
+    box-shadow: 2px 2px rgb(95, 93, 85);
+    color: white;
+}
+
+.context{
+
+    color: black;
+    font-size: medium;
+    text-shadow: none;
+    margin-top: 50px;
+
+}
+
+

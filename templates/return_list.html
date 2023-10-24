@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static "style_2.css" %}">
+    <title>returning todo list</title>
+</head>
+<body>
+   
+    <marquee class="heading" ><b><h1>FIND YOUR LIST HERE</h1></b></marquee>
+
+    <div class="box_heading">
+    <div class = "heading_2">
+
+    <h2>DISPLAYING YOUR TODO LIST </h2>
+    </div>
+    <form  action = "display">
+        <input type="text" class="name" name="name" placeholder="Enter your Name">
+      
+
+        <button type = "submit" class="submit">SUBMIT</button>
+
+    
+    </form>
+    <div class = "context">
+    
+    
+    
+    {% for x in members %}
+    
+    {{x}}<br>
+    
+    
+    
+    {% endfor %} 
+    
+    </div>
+    </div>    
+</body>
+</html>
