@@ -1,0 +1,107 @@
+body{
+    background-color: aqua;
+    background-repeat: repeat;
+    background-size: 100%;
+    background-image:  url("https://media.npr.org/assets/img/2022/12/22/lk_harlan_to-do-list_final_slide-6aaf506ab59a595f8f3494bdcc51b1a98ab40789-s900-c85.webp")
+
+}
+
+.signup-form{
+    padding: 15vh;
+    margin-left: 70vh;
+    margin-top: 15vh;
+    width: 20vh;
+    height: 40vh;
+    background-color: pink;
+    display:block;
+}
+
+.s_name{
+    padding: 2vh;
+    border-radius: 15px;
+    height: 1vh;
+    text-align: center; 
+    width: 30vh;
+    margin-left: -37%;
+    display: block;
+}
+
+.s_username{
+    padding: 2vh;
+    border-radius: 15px;
+    height: 1vh;
+    text-align: center;
+    width: 30vh;
+    margin-left: -37%;
+    display: block;
+}
+
+.s_password{
+    padding: 2vh;
+    border-radius: 15px;
+    height: 1vh;
+    text-align: center;
+    width: 30vh;
+    margin-left: -37%;
+    display: block;
+}
+
+.submit{
+
+    padding: 20px;
+    padding-top: 10px;
+    padding-bottom: 23px;
+    /* border-radius: 15px; */
+    height: 2vh;
+    width: 15vh;
+    margin-left: 25px;
+    margin-top: 5vh;
+    display: block;
+    border-color: black;
+    border-width: 3px;
+    
+}
+
+.submit:hover{
+    background-color: blueviolet;
+    color: white;
+    border: 5px;
+    box-shadow: 30px;
+    text-shadow: 10px;
+    
+}
+
+@keyframes example {
+    from {color: red;}
+    to {color: yellow;}
+
+    
+  }
+@keyframes example1 {
+    25%   {color: red;}
+    50%  {color: yellow;}
+    75%  {color: blue;}
+    100% {color: green;}
+}
+
+
+
+h1{
+    
+    color: green;
+    animation-name: example1;
+    animation-duration: 12s;
+    animation-iteration-count: 300;
+
+
+}
+h2{
+    margin-top: -10vh;
+    width: 30vh;
+    font-size: 5vh;
+    margin-left: auto;
+    padding-bottom: 10vh;
+    color: rgb(57, 0, 245);
+}
+
+

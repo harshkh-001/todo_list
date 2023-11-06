@@ -43,6 +43,18 @@ body{
     background-color: aquamarine;
 }
 
+.password{
+    margin-top: 2vw;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 10px;
+    width: 25vw;
+    font-size: large;
+    color: rgb(174, 0, 255);
+    font-weight: bolder;
+    background-color: aquamarine;
+}
+
 .submit{
     padding: 1vw;
     margin-top: 2vw;
@@ -64,4 +76,16 @@ body{
 
 }
 
+.hypertext{
+    color:blue;
+    text-shadow: none;
+    font-size: medium;
+}
 
+.hypertext:hover{
+    color:rgba(41, 0, 153, 0.923);
+    text-shadow: none;
+    font-size: medium;
+    font-weight: bolder;
+
+}

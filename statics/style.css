@@ -31,11 +31,12 @@ body{
     /* background-color: pink; */
     padding: 50px;
     margin-left: 30vw;
-    margin-top: 15vw;
+    margin-top: 10vw;
     padding-bottom: 500px;
     font-size:xx-large;
     
 }
+
 
 .heading_2{
 
@@ -45,7 +46,19 @@ body{
 }
 
 .name{
-    margin-top: 5vw;
+    margin-top: 9vw;
+    padding: 1vw;
+    text-align: center;
+    border-radius: 10px;
+    width: 25vw;
+    font-size: large;
+    color: rgb(174, 0, 255);
+    font-weight: bolder;
+    background-color: aquamarine;
+}
+
+.password{
+    margin-top: 2vw;
     padding: 1vw;
     text-align: center;
     border-radius: 10px;
@@ -57,7 +70,7 @@ body{
 }
 
 .todo{
-    margin-top: 3vw;
+    margin-top: 2vw;
     padding: 1vw;
     text-align: center;
     border-radius: 10px;
@@ -91,3 +104,11 @@ body{
     color: rgb(5, 178, 246);
 }
 
+.hypertext2{
+    color: rgb(32, 71, 177);
+}
+
+.hypertext2:hover{
+    color: blue;
+    font-weight: bolder;
+}

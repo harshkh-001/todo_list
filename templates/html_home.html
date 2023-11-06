@@ -13,16 +13,22 @@
     <div class="box_heading">
     <div class = "heading_2">
 
-    <h2>TODO LIST</h2>
+    {% comment %} <h2>LIST</h2> {% endcomment %}
     </div>
 
     <form  action = "adding">
         <input type="text" class="name" name="name" placeholder="Enter your Name">
+        <input class = "password" name = "password" type = "password" placeholder = "Enter the password here">
         <input type="text" class="todo" name="todo" placeholder="what to do">
 
-        <button type = "submit" class="add">ADD THE TASK</button>
+        <button type = "submit" class="add" onclick = "myFunctions()">ADD THE TASK</button>
 
-        <a href = "return_list" class = "hypertext">To check your list </a>
+        <script>
+            function myFunctions() {
+              alert("Successful Added in the list");
+            }
+        </script>
+        <a href = "return_list" class = "hypertext">To check your list </a>  <a href = "signup" class = "hypertext2">SIGN UP</a>
     </form>
     </div>
 </body>
