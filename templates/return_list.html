@@ -18,7 +18,7 @@
     <h2>DISPLAYING YOUR TODO LIST </h2>
     </div>
     
-    <form  action = "display">
+    <form  action = "display" method = "POST">{% csrf_token %}
         <input type="text" class="name" name="name" placeholder="Enter your Name"><br>
         <input type="password" class="password" name="password" placeholder="Enter your password"><br>
       

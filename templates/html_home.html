@@ -16,7 +16,7 @@
     {% comment %} <h2>LIST</h2> {% endcomment %}
     </div>
 
-    <form  action = "adding">
+    <form  action = "adding" method = "POST">{% csrf_token %}
         <input type="text" class="name" name="name" placeholder="Enter your Name">
         <input class = "password" name = "password" type = "password" placeholder = "Enter the password here">
         <input type="text" class="todo" name="todo" placeholder="what to do">

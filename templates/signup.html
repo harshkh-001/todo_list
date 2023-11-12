@@ -14,7 +14,7 @@
 <body>
     <marquee><H1>WELCOME TO TODO LIST SIGNUP PAGE</H1></marquee>
     <div class="conatiner1">
-    <form class = "signup-form" action = "sign_up" method = "get">
+    <form class = "signup-form" action = "sign_up" method = "POST">{% csrf_token %}
         <h2><b>SIGN UP</b></h2>
         
         <input class = "s_name" name = "s_name" type = "text" placeholder = "Enter your name"><br><br>

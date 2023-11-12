@@ -5,6 +5,8 @@ from django.http import HttpResponse
 from django.template import loader
 
 
+
+
 def home(request):
     return render(request , "html_home.html")
 # Create your views here.
@@ -13,8 +15,8 @@ def sign(request):
     return render(request , "signup.html")
 
 def sign_up(request):
-    name = request.GET.get('s_name', "defalt")
-    pas = request.GET.get('s_password', "defalt")
+    name = request.POST.get('s_name', "defalt")
+    pas = request.POST.get('s_password', "defalt")
     if (name == "" or pas == ""):
         return HttpResponse("name or what to do cannot be empty")
     client = py.MongoClient("mongodb://localhost:27017")
@@ -24,9 +26,9 @@ def sign_up(request):
     return render(request , "html_home.html")
     
 def adding(request):
-    todo = request.GET.get('todo', "defalt")
-    name = request.GET.get('name', "defalt")
-    pas = request.GET.get('password', "defalt")
+    todo = request.POST.get('todo', "defalt")
+    name = request.POST.get('name', "defalt")
+    pas = request.POST.get('password', "defalt")
     if (name == "" or todo == ""):
         return HttpResponse("name or what to do cannot be empty")
     client = py.MongoClient("mongodb://localhost:27017")
@@ -41,7 +43,8 @@ def adding(request):
                 collection = db["todolist"]
                 idd = collection.count_documents({})
                 collection.insert_one({"_id": idd+1 , "Name" : name ,"password":pas,"todo" : todo})
-                print(request.GET.get('todo', "defalt"))
+                print(request.POST.get('todo', "defalt"))
+                
                 response = redirect(".")
                 return response
     return HttpResponse("Incorrect password or name kindly check")
@@ -54,8 +57,8 @@ def returning(request):
     client = py.MongoClient("mongodb://localhost:27017")
     db = client["todoproject"]
     collection = db["todolist"]
-    name = request.GET.get("name" , "defalt")
-    pas = request.GET.get('password', "defalt")
+    name = request.POST.get("name" , "defalt")
+    pas = request.POST.get('password', "defalt")
     if (name == "" or pas == ""):
         return HttpResponse("name or what to do cannot be empty")
     all_data = collection.find({"Name": name} , {"_id": 0  ,"todo": 1})
