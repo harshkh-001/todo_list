@@ -12,4 +12,4 @@ Todo list project
 - Than by same name and password user have to add his/her todo list task
 - After that user can also check previously added task by give the same name and password
 
-### Youtube link of todo_list working 
+### steps to show todo list working in "steps to operate todo list" folder
