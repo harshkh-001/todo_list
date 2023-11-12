@@ -61,7 +61,7 @@ def returning(request):
     pas = request.POST.get('password', "defalt")
     if (name == "" or pas == ""):
         return HttpResponse("name or what to do cannot be empty")
-    all_data = collection.find({"Name": name} , {"_id": 0  ,"todo": 1})
+    all_data = collection.find({"Name": name , "password" : pas} , {"_id": 0  ,"todo": 1})
     
     text = []
     count = 0
