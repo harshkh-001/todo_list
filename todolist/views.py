@@ -19,7 +19,7 @@ def sign_up(request):
     pas = request.POST.get('s_password', "defalt")
     if (name == "" or pas == ""):
         return HttpResponse("name or what to do cannot be empty")
-    client = py.MongoClient("mongodb://localhost:27017")
+    client = py.MongoClient("mongodb+srv://try:Passwordtry@cluster01.bwggqay.mongodb.net")
     db = client["todoproject"]
     collection = db["password_manager"]
     collection.insert_one({"name":name , "password":pas}) 
@@ -31,14 +31,14 @@ def adding(request):
     pas = request.POST.get('password', "defalt")
     if (name == "" or todo == ""):
         return HttpResponse("name or what to do cannot be empty")
-    client = py.MongoClient("mongodb://localhost:27017")
+    client = py.MongoClient("mongodb+srv://try:Passwordtry@cluster01.bwggqay.mongodb.net")
     db = client["todoproject"]
     collect = db["password_manager"]
     all_data = collect.find({"name":name} , {"_id" : 0 , "password" : 1})
     for list1 in all_data:
         for password in list1.values():
             if(password == pas):
-                client = py.MongoClient("mongodb://localhost:27017")
+                client = py.MongoClient("mongodb+srv://try:Passwordtry@cluster01.bwggqay.mongodb.net")
                 db = client["todoproject"]
                 collection = db["todolist"]
                 idd = collection.count_documents({})
@@ -54,14 +54,14 @@ def return_list(request):
 
 def returning(request):
     
-    client = py.MongoClient("mongodb://localhost:27017")
+    client = py.MongoClient("mongodb+srv://try:Passwordtry@cluster01.bwggqay.mongodb.net")
     db = client["todoproject"]
     collection = db["todolist"]
     name = request.POST.get("name" , "defalt")
     pas = request.POST.get('password', "defalt")
     if (name == "" or pas == ""):
         return HttpResponse("name or what to do cannot be empty")
-    all_data = collection.find({"Name": name , "password" : pas} , {"_id": 0  ,"todo": 1})
+    all_data = collection.find({"Name": name , "password": pas} , {"_id": 0  ,"todo": 1})
     
     text = []
     count = 0
@@ -84,7 +84,7 @@ def returning(request):
         "members" : text
     }
     
-    client = py.MongoClient("mongodb://localhost:27017")
+    client = py.MongoClient("mongodb+srv://try:Passwordtry@cluster01.bwggqay.mongodb.net")
     db = client["todoproject"]
     collect = db["password_manager"]
     all_data = collect.find({} , {"_id" : 0 , "password" : 1})
